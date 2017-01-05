@@ -1,0 +1,381 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="杭州小蓓网络科技有限公司" />
+	<meta name="description" content="杭州小蓓网络科技有限公司 是一件技术开发、技术服务、技术咨询、成果转让公司。主要经营技术开发、技术服务、技术咨询、成果转让：计算机网络信息技术、多媒体技术、计算机数据处理技术、计算机系统集成技术。" />
+	<link rel="stylesheet" href="css/core.css">
+	<title>首页 - 小蓓网</title>
+		
+	<style>
+	
+	 .home_a{
+		background-color: #F77B6F;
+		color: white;
+	 }
+	 .banner {
+	 	width: 100%;
+	 	height: 500px;
+	 	position:relative;
+	 }
+	 .banner ul{
+	 	list-style: none;
+	 	margin: 0px;
+	 	padding: 0px;
+	 }
+	 .banner .bu{
+	 	position: absolute;
+	 	z-index: 99;
+		top:440px;
+		width: 100%;
+	 }
+	 .banner .bu ul.btn{
+		width: 150px;
+		margin: 0 auto;
+	 }
+	 .banner .bu ul.btn li{
+	 	width:25px; 
+		height:25px; 
+		border-radius:50%; 
+		background:#FFF; 
+		margin:0 7px; 
+		float:left; 
+		cursor:pointer 
+	 }
+	 .banner .on_left{
+	 	width: 50px;
+	 	height: 100px;
+	 	background-color: #fff;
+	 	opacity: 0.5;
+	 	position: absolute;
+	 	left: 0px; top:50%;
+	 	z-index: 99;
+	 	cursor: pointer;
+	 	font-size: 50px;
+	 	line-height: 100px;
+	 	text-align: center;
+	 	margin-top: -50px;
+	 }
+	 .banner .on_right{
+	 	width: 50px;
+	 	height: 100px;
+	 	background-color: #fff;
+	 	opacity: 0.5;
+	 	position: absolute;
+	 	right: 0px; top: 50%;
+	 	z-index: 99;
+	 	cursor: pointer;
+	 	font-size: 50px;
+	 	line-height: 100px;
+	 	text-align: center;
+	 	margin-top: -50px;
+	 }
+	 .banner ul.pic li{
+	 	position:absolute; 
+	 	left:0px; right:0px; top:0px; bottom:0px;
+		opacity: 0;
+	 }
+	 .banner ul.pic li.one{
+	 	background:url(images/banner_1.jpg) no-repeat center;
+		width:100%; height:500px;
+	 }
+	 .banner ul.pic li.two{
+	 	background:url(images/banner_2.jpg) no-repeat center;
+		width:100%; height:500px;
+	 }
+	 .banner ul.pic li.three{
+	 	background:url(images/banner_3.jpg) no-repeat center;
+		width:100%; height:500px;
+	 }
+	 .banner ul.pic li.one .a1{
+	 	position: absolute;
+	 	display: block;
+	 	top: 0; left: 0; bottom: 0; right: 0;
+	 	z-index: 98;
+	 }
+	 .banner ul.pic li.two .a2{
+		position: absolute;
+	 	display: block;
+	 	top: 0; left: 0; bottom: 0; right: 0;
+	 	z-index: 98;
+	 }
+	 .banner ul.pic li.three .a3{
+		position: absolute;
+	 	display: block;
+	 	top: 0; left: 0; bottom: 0; right: 0;
+	 	z-index: 98;
+	 }
+
+	 .Text_center { height:130px; padding-top: 50px;}
+	 .Text_center p{text-align: center; font-weight: bold;}
+	 .Text_center .title{ font-size: 24px; color: black;}
+	 .Text_center .titls{ font-size: 16px; }
+
+	 .sange_box{width: 1125px; margin: 20px auto; }
+	 .sange_box .one{width: 300px; float: left;}
+	 .sange_box .one .box1{ width: 295px; height:183px; background: url(images/app1.jpg) no-repeat; border-radius: 10px; position: relative; cursor: pointer;}
+	 .sange_box .one .box1 span{ color: red; position: absolute; bottom: 0;left: 0;right: 0;background-color: black;  opacity: 0.4; text-align: center; height: 50px; line-height: 50px; transition: height 0.3s linear; }
+	 .sange_box .one .box1:hover span{
+	 	height: 0px;
+		transition: height  2s linear;
+		opacity: 0.1;
+	 }
+	 .sange_box .three .box3:hover span{
+	 	height: 0px;
+		transition: height  2s linear;
+		opacity: 0.1;
+	 }
+	 .sange_box .tow{width: 300px; float: left; margin-left: 110px;}
+	 .sange_box .tow .box2{ width: 295px; height: 183px; background: url(images/game.jpg) no-repeat; border-radius: 10px; position: relative;cursor: pointer;}
+	 .sange_box .tow .box2 span{color: red; position: absolute; bottom: 0;left: 0;right: 0;background-color: black; height: 50px; opacity: 0.4; text-align: center; line-height: 50px;}
+
+	 .sange_box .three{width: 300px; float: left; margin-left: 110px;}
+	 .sange_box .three .box3{ width: 295px; height: 183px; border-radius: 10px;background: url(images/jy.jpg) no-repeat; position: relative; cursor: pointer;}
+	 .sange_box .three .box3 span{color: red; position: absolute; bottom: 0;left: 0;right: 0;background-color: black; height: 50px; opacity: 0.4; text-align: center; line-height: 50px; transition: height 0.3s linear;}
+	 .sange_box p {
+	 	font-size: 14px;
+	 	color: black;
+	 	text-indent:1em;
+	 }
+	 .conter_box { width:1125px; margin: 80px auto;}
+	 .conter_box .box_one{width:830px; height: 94px;  background: #475168; float: left; border-radius: 5px;}
+	 .conter_box .box_tow{ width: 266px; height: 94px; background: #F77B6F; float: right; border-radius: 5px;}
+
+	 .diannao{ height: 520px; background: #F4F4F4;}
+     .diannao .dn{ width: 1125px; height: 520px; margin: 0 auto;}
+     .diannao .dn .left_img{ float: left; margin-top: 80px; margin-left: 50px;}
+ 	 .diannao .dn .rigth_text{float: right; margin-right: 20px; width:500px;  margin-top: 80px;line-height: 170%;}
+ 	 .diannao .dn .rigth_text h3{
+ 	 	color: red;
+ 	 }
+ 	 .diannao .dn .rigth_text input{ width: 196px; height: 65px; background: #475168; border: 0px; border-radius: 5px; margin-top: 50px; color: #fff; cursor: pointer;}
+ 	 .si_img { width: 1125px; margin: 0 auto; }
+ 	 .si_img h3{
+ 	 	padding-top: 20px;
+ 	 	padding-bottom: 20px;
+ 	 	color: black;
+ 	 }
+ 	 .si_img ul{list-style: none; padding: 0px; position: relative;}
+ 	 .si_img li{ float: left; margin-left: 11px; cursor: pointer; }
+ 	 .si_img li img{
+ 	 	background-size: 150% 150%; transition: background-size 3s linear; 
+ 	 }
+	 .si_img li img:hover{
+	 	background-size: 150% 150%;
+	 	transition: background-size 3s linear;
+	 }
+
+ 	 .si_img .jiantou{text-align: center; margin-top: 40px;}
+ 	 .footer_text{
+ 	 	margin-top: 30px;
+ 	 	text-align: center;
+ 	 	color: #4AC9C0;
+ 	 	font-weight: bold;
+ 	 	margin-bottom: 80px;
+ 	 }
+	 .footer_logo{
+	 	width: 1125px;
+	 	margin: 0 auto;
+	 }
+	 .footer_logo li{
+	 	list-style: none;
+	 	float: left;
+	 	margin-left: 60px;
+	 	margin-bottom: 50px;
+	 }
+ 	
+	</style>
+
+</head>
+<body>
+<div class="background_g">
+	<div class="top">
+ 	 <div class="box_left"><img src="images/logo.png"></div>
+ 	 <div class="box_right" id="a">
+ 	 		<a href="index.html" class="home_a">首页</a>
+ 	 	 	<a href="index1.html" >搞笑</a>
+ 	 	  	<a href="index2.html" >咨询</a>
+ 	 	   	<a href="index3.html" >段子</a>
+ 	 	    <a href="index4.html" >唯美</a>
+ 	 	    <a href="index5.html" >案例</a>
+ 	 	    <a href="index6.html" >开发</a>
+ 	 	    <a href="index7.html" >问题反馈</a>
+ 	    <img class="Search" src="images/index1_09.png">
+ 	 </div>
+	</div>
+ </div>
+ 	<div class="banner" id="banner">
+ 		<div id="onl" class="on_left">&lt;</div>
+		<div id="onr" class="on_right">&gt;</div>
+ 		<div class="bu">
+		 	<ul class="btn" id="aa">
+		 		<li></li>
+		 		<li></li>
+		 		<li></li>
+		 	</ul>
+	 	</div>
+	 	<ul class="pic" id="bb">
+	 		<li class="one"><a href="http://hr.nd.com.cn/" class="a1"></a></li>
+	 		<li class="two"><a href="http://hbq.99.com/" class="a2"></a></li>
+	 		<li class="three"><a href="http://www.101.com/" class="a3"></a></li>
+	 	</ul>
+ 	</div>
+
+ 	<div class="Text_center">
+ 		<p class="title">WELCOME TO FLATLAB - SHARED ON WEIDEA.NET</p>
+ 		<P class="titls">professional html template perfect for Admin Dashboard</P>
+ 	</div>
+ 	<div class="sange_box">
+ 		<div class="one">
+ 			 <div class="box1"><span>软  件</span></div>
+ 			 <p>软件并不只是包括可以在计算机（这里的计算机是指广义的计算机）上运行的电脑程序，与这些电脑程序相关的文档一般也被认为是软件的一部分。简单的说软件就是程序加文档的集合体。另也泛指社会结构中的管理系统、思想意识形态、思想政治觉悟、法律法规等等。.</p>
+ 		</div>
+ 		<div class="tow">
+ 			<div class="box2"><span>游  戏</span></div>
+ 			<p>游戏有智力游戏和活动性游戏之分，又翻译为play，pastime，playgame，sport，spore，squail，games，hopscotch，jeu，toy体育运动的一类。现在的游戏多指各种平台上的电子游戏。又有同名美国电影和韩国电影，还有同名图书以及Beyond的歌曲《游戏》。.</p>
+ 		</div>
+ 		<div class="three">
+ 		<div class="box3"><span>教  育</span></div>
+ 			<p>教育，教化培育，以现有的经验、学识推敲于人，为其解释各种现象、问题或行为，其根本是以人的一种相对成熟或理性的思维来认知对待，让事物得以接近其最根本的存在，人在其中，慢慢的对一种事物由感官触摸而到以认知理解的状态，并形成一种相对完善或理性的自我意识思维..</p></div>
+ 	</div>
+ 	<div class="clear"></div>
+
+ 	<div class="conter_box">
+ 	  <div class="box_one"></div>
+ 	  <div class="box_tow"></div>
+ 	  <div class="clear"></div>
+ 	</div>
+
+ 	<div class="diannao">
+ 	 <div class="dn">
+ 		<div class="left_img"><img src="images/index1_17.png"></div>
+ 		<div class="rigth_text">
+ 			<h3>JS & MOD TREND</h3>
+ 			<div><span>Java SE是Java平台标准版的简称，用于开发和部署桌面、服务器以及嵌入设备和实时环境中的Java应用程序。Java SE包括用于开发Java Web服务的类库，同时，Java SE为Java EE提供了基础。</span></div>
+ 			<input type="button" value="PURCHASE NOW">
+ 		</div>
+ 	 </div>
+ 	  <div class="clear"></div>
+ 	</div>
+ 	
+ 	<div class="si_img">
+ 		<h3>RECENT WORK</h3>
+ 		<ul>
+ 			<li><img src="images/zhineng.png" width="270px" height="205px"></li>
+ 			<li><img src="images/hbase.png" width="270px" height="205px"></li>
+ 			<li><img src="images/ios.png" width="270px" height="205px"></li>
+ 			<li><img src="images/js.png" width="270px" height="205px"></li>
+ 		</ul>
+ 		<div class="clear"></div>
+ 		<div class="jiantou"><img src="images/index1_47.png"></div>
+ 	</div>
+ 	
+ 	<div class="footer_text">
+ 		<span>"You're constantly trying to make up for stuff when you're a mum. I don't mind, because of the love I feel for him."</span>
+ 	</div>
+ 	<div class="footer_logo">
+ 		<ul>
+ 			<li><img src="images/index1_51.png"></li>
+ 			<li><img src="images/index1_53.png"></li>
+ 			<li><img src="images/index1_55.png"></li>
+ 			<li><img src="images/index1_57.png"></li>
+ 			<li><img src="images/index1_59.png"></li>
+ 		</ul>
+ 		<div class="clear"></div>
+ 	</div>
+
+ 	<div class="footer">
+ 	 	<div class="footer_bg">
+ 			<div class="left_text">
+ 				<h4>杭州小蓓网络科技有限公司</h4>
+ 				<p>联系人： 马云</p>
+				<p>联系电话： 15535535533</p>
+ 				<p>QQ: 123456</p>
+ 				<p>电子邮箱: support@vectorlad.com</p>
+ 				<p>地址：杭州市西湖区文二路173号文欣商务楼3楼</p>
+ 				<p>服务区: 杭州</p>
+ 			</div>
+ 		<div class="center_text">
+ 			<h4>商务合作</h4>
+ 			<p><a href="https://www.taobao.com/" target="_blank">淘宝</a></p>
+ 			<p><a href="http://www.vip.com/"  target="_blank">唯品会</a></p>
+ 			<p><a href="https://www.jd.com"  target="_blank">京东</a></p>
+ 			<p><a href="http://www.163.com/"  target="_blank">网易</a></p>
+ 		    <p><a href="http://www.qq.com/"  target="_blank">腾讯</a></p>
+ 		</div>
+ 		<div class="smallBox">
+ 			<h4>宫格show</h4>
+			<div class="smallA"></div>
+			<div class="smallA"></div>
+			<div class="smallA"></div>
+			<div class="smallA"></div>
+			<div class="clear"></div>
+			<div class="smallB"></div>
+			<div class="smallB"></div>
+			<div class="smallB"></div>
+			<div class="smallB"></div>
+ 		</div>
+ 	   </div>
+	</div>
+ 		
+	
+ 	<script src="./js/core.js"></script>
+ 	<script>
+ 		var btn = document.getElementById("aa").getElementsByTagName("li"),
+ 			imgs= document.getElementById("bb").getElementsByTagName("li"),
+ 			box = document.getElementById("banner"),
+ 			now = 0,
+ 			left = document.getElementById("onl"),
+ 			right= document.getElementById("onr");
+
+ 			btn[0].style.background = "red";
+ 			imgs[0].style.opacity = "1";
+ 			
+ 				function my(){
+ 				for(var i = 0; i < btn.length; i++){
+ 					btn[i].style.background = ("#fff");
+ 					imgs[i].style.opacity = ("0");
+ 				}
+ 				btn[now].style.background = "red";
+ 				imgs[now].style.opacity = "1";
+ 			}
+
+ 			//控制下面圆点点击
+ 			for (var i = 0; i < btn.length; i++) {
+ 				btn[i].index = i;
+ 				btn[i].onclick = function(){
+ 					now = this.index;
+ 					my();
+ 				}
+ 			};
+ 			//控制右边点击
+ 			function play(){
+ 				now = (now+1)%btn.length;
+ 				my();
+ 			}
+ 			right.onclick = function play(){
+ 				now = (now+1)%btn.length;
+ 				my();
+ 			}
+ 			//控制左边点击
+ 			left.onclick = function(){
+ 				if (now==0) {
+ 					now = btn.length
+ 				}
+ 				now = (now-1)%btn.length;
+ 				my();
+ 			}
+ 			
+ 			timer = setInterval("play()",2000);
+ 			box.onmouseover = function(){
+ 				clearInterval(timer);
+ 			}
+ 			box.onmouseout = function(){
+ 				timer = setInterval("play()",2000);
+ 			}
+ 			
+
+ 	</script>
+</body>
+</html>
